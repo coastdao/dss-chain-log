@@ -5,7 +5,7 @@ set -e
 
 [[ "$ETH_RPC_URL" ]] || { echo "Please set a ETH_RPC_URL"; exit 1; }
 
-CHANGELOG=0xdA0Ab1e0017DEbCd72Be8599041a2aa3bA7e740F
+CHANGELOG=0x060361951ada5365c06b7cb87d46b325747da10ds
 
 echo -e "Network: $(seth chain)"
 list=$(seth call "$CHANGELOG" 'list()(bytes32[])')
